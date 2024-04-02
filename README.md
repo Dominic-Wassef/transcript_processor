@@ -65,7 +65,7 @@
 
 ### Special Note
 
-Modify the directory path in `handlers/handlers.go` according to your local setup:
+Modify the directory path in `handlers/handlers.go` according to your local setup for your utterances folder:
 
 Currently it is set to:
 ```go
@@ -73,9 +73,8 @@ dir := "/Users/dominic/Desktop/golang/transcriptprocessor/utterances"
 ```
 
 Please set it to:
-Currently it is set to:
 ```go
-dir := "Your/Absolute/Directory/Path"
+dir := "Your/Absolute/Directory/Path/to/utterances"
 ```
 
 ### Running the Backend
