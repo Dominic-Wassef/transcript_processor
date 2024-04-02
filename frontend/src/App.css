@@ -1,0 +1,70 @@
+.App {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+.App-header {
+  background-color: #f7f7f7;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 1vmin);
+  color: #333;
+}
+
+.Utterance {
+  margin: 10px;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 80%;
+  max-width: 600px;
+  transition: box-shadow 0.3s ease-in-out;
+  text-decoration: none; /* Removes underline from links */
+  color: inherit; /* Ensures text inherits color from parent */
+}
+
+.Utterance:hover {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.Utterance img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.TextWithTimestamp {
+  text-align: left;
+  flex-grow: 1;
+}
+
+.Timestamp {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 0.85rem;
+  color: #888;
+}
+
+.Speaker, .Text, .Timestamp {
+  transition: font-weight 0.5s ease;
+}
+
+.Utterance:hover .Speaker,
+.Utterance:hover .Timestamp {
+  font-weight: bold;
+}
+
+.Date, .Time {
+  display: block; /* Ensure they appear on separate lines */
+}
